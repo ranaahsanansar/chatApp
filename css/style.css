@@ -1,0 +1,32 @@
+/* body{
+    background-image: linear-gradient(rgba(36, 154, 250, 0.907) , rgba(36, 97, 250, 0.907));
+} */
+
+.inbox_container {
+    height: 60vh;
+    background-color: red;
+}
+
+.inbox {
+    padding: 5px;
+}
+
+.message{
+    background-color: gray;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 12px;
+    width: fit-content;
+    
+}
+.right{
+    float: right;
+    clear: both;
+}
+
+.left{
+    float: left;
+    clear: both;
+}
+
