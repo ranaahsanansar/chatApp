@@ -17,7 +17,7 @@ io.on('connection' , socket =>{
     }); 
 
     socket.on('send' , (message) =>{
-        socket.broadcast.emit('receive' , {r_message: message , name: user[socket.id]});
+        socket.broadcast.emit('receive' , {r_message: message , name: users[socket.id]});
     });
 
 });
