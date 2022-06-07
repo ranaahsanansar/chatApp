@@ -1,14 +1,24 @@
-/* body{
-    background-image: linear-gradient(rgba(36, 154, 250, 0.907) , rgba(36, 97, 250, 0.907));
-} */
+body{
+    background-image: linear-gradient(rgba(232, 250, 36, 0.729) , rgba(247, 222, 148, 0.862));
+}
+
+#logo{
+    width: 90px;
+    height: 70px;
+    
+
+}
+    
 
 .inbox_container {
-    height: 60vh;
-    background-color: red;
+    height: 78vh;
+    background-color: rgba(139, 217, 100, 0.848);
+    border-radius: 5px;
+    border: 2px solid green;
 }
 
 .inbox {
-    padding: 5px;
+    padding: 8px;
 }
 
 .message{
@@ -28,5 +38,23 @@
 .left{
     float: left;
     clear: both;
+}
+
+.send_msg{
+    text-align: center;
+    padding: 5px;
+    border: 2px solid rgb(2, 56, 99);
+    background-color: rgba(106, 106, 176, 0.866);
+    
+}
+
+#msginput{
+    width: 80%;
+    border-radius: 5px;
+}
+
+.send_btn{
+    width: 15%;
+    border-radius: 5px;
 }
 
