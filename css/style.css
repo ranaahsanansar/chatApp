@@ -15,6 +15,7 @@ body{
     background-color: rgba(139, 217, 100, 0.848);
     border-radius: 5px;
     border: 2px solid green;
+    overflow: scroll;
 }
 
 .inbox {
@@ -22,7 +23,7 @@ body{
 }
 
 .message{
-    background-color: gray;
+    background-color: rgb(78, 153, 163);
     margin-bottom: 5px;
     padding: 10px;
     border: 2px solid black;
