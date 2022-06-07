@@ -6,6 +6,8 @@ const messageInput = document.getElementById('msginput');
 
 const messageContainer = document.querySelector(".inbox");
 
+var audio = new Audio('ring.mp3');
+
 const append = (message, position)=>{
     const mesaageElement = document.createElement('div');
     mesaageElement.innerText = message;
@@ -13,6 +15,10 @@ const append = (message, position)=>{
     mesaageElement.classList.add(position);
 
     messageContainer.append(mesaageElement);
+    if(position == 'left'){
+        audio.play();
+    }
+    
 }
 
 form.addEventListener('submit' , (e)=>{
@@ -34,4 +40,8 @@ socket.on('user-joined' , data=>{
 
 socket.on('receive' , data=>{
     append(` ${data.name} : ${data.r_message} ` , 'left');
+});
+
+socket.on('disconnected' , name =>{
+    append(`${name} Left the Chat` , 'left');
 });

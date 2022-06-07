@@ -20,4 +20,11 @@ io.on('connection' , socket =>{
         socket.broadcast.emit('receive' , {r_message: message , name: users[socket.id]});
     });
 
+    socket.on('disconnect' , message =>{
+        socket.broadcast.emit('disconnected' , users[socket.id]);
+        delete users[socket.id];
+    });
+
 });
+
+
